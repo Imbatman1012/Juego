@@ -20,6 +20,7 @@ GamePlayManager = {
         this.jug.angle = 0;
         this.jug.scale.setTo(1.5);*/
         player.anchor.setTo(0.5,0.5);
+        player.scale.setTo(3)
 
 
 
@@ -42,23 +43,23 @@ GamePlayManager = {
                 if (cursors.left.isDown)
                 {
                     player.body.velocity.x = -90;
-                    player.animations.play('left', 10, true);
+                    player.animations.play('left', 4, true);
                 }
 
                 else if (cursors.right.isDown)
                 {
                     player.body.velocity.x = 90;
-                    player.animations.play('right', 10, true);
+                    player.animations.play('right', 4, true);
                 }
                 else if (cursors.up.isDown)
                 {
                     player.body.velocity.y = -90;
-                    player.animations.play('up', 10, true);
+                    player.animations.play('up', 4, true);
                 }
                  else if (cursors.down.isDown)
                 {
                     player.body.velocity.y = 90;
-                    player.animations.play('down', 10, true);
+                    player.animations.play('down', 4, true);
                 }
                 else
                 {
